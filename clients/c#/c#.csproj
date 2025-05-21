@@ -2,14 +2,14 @@
 
     <PropertyGroup>
         <!-- Target -->
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFrameworks>net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
         <LangVersion>preview</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
         <!-- Project Info -->
         <RootNamespace>Memberwise.Symxify</RootNamespace>
         <AssemblyName>Symxify.Client</AssemblyName>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <Authors>Memberwise</Authors>
         <Company>Memberwise</Company>
         <Product>Symxify.Client</Product>
@@ -40,7 +40,7 @@
     <PropertyGroup>
         <PackageReadmeFile>readme.md</PackageReadmeFile>
     </PropertyGroup>
-    
+
     <ItemGroup>
         <None Include="readme.md" Pack="true" PackagePath="\"/>
     </ItemGroup>

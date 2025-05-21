@@ -5,9 +5,9 @@
     "module": "CommonJS",
     "declaration": true,
     "outDir": "./dist",
-    "strict": false, 
+    "strict": false,
     "moduleResolution": "node",
-    "noEmitOnError": false, 
+    "noEmitOnError": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true

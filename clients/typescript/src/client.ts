@@ -4,6 +4,7 @@ import type { APIResponseError } from "./types/APIResponseError";
 import type { OperationMap } from "./generated/operation-map";
 import { OperationServiceMap } from "./generated/operation-map-runtime";
 import { create } from "domain";
+import type { Account } from "./types/Account";
 
 export interface APIResponse<T> {
   success: boolean;
@@ -115,7 +116,6 @@ export function useSymxifyClient(): SymxifyClient {
   }
   return clientInstance;
 }
-
 function initClientInstance(client: SymxifyClient) {
   clientInstance = client;
 }

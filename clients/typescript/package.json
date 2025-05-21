@@ -10,7 +10,10 @@
       "import": "./dist/client.mjs",
       "require": "./dist/client.js",
       "types": "./dist/client.d.ts"
-    }
+    },
+    "./types/*": {
+    "types": "./dist/types/*.d.ts"
+  }
   },
   "files": [
     "dist"

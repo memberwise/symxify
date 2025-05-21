@@ -26,27 +26,8 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export const loader = async ({ request }: Route.LoaderArgs) => {
-  const client = symxify();
-  const resp = await client.request().getAccountSelectFields({
-    accountNumber: "99",
-    credentials: {
-      administrativeCredentials: {
-        password: "password",
-      },
-    },
-    selectableFields: {
-      includeAllAccountFields: true,
-    },
-    deviceInformation: {
-      deviceNumber: 12345,
-      deviceType: "SYMX",
-    },
-    messageId: "A very cool message",
-  });
+  
 
-  console.log(resp); //If successful, the account will be in the data object!
-
-  return client;
 };
 
 export function Layout({ children }: { children: React.ReactNode }) {
